@@ -9,7 +9,7 @@ sudo touch stunnel.conf
 echo "client = no" | sudo tee -a /etc/stunnel/stunnel.conf
 echo "[openvpn]" | sudo tee -a /etc/stunnel/stunnel.conf
 echo "accept = 443" | sudo tee -a /etc/stunnel/stunnel.conf
-echo "connect = 127.0.0.1:1194" | sudo tee -a /etc/stunnel/stunnel.conf
+echo "connect = 127.0.0.1:55" | sudo tee -a /etc/stunnel/stunnel.conf
 echo "cert = /etc/stunnel/stunnel.pem" | sudo tee -a /etc/stunnel/stunnel.conf
 
 sudo sed -i -e 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
